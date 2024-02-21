@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ChatBot Saludador</title>
+</head>
+<body>
+    <h1>ChatBot Saludador</h1>
+    
+    <form id="askName-form">
+        <label for="Name">Cual es tu nombre?/What is your name?</label><br>
+        <input type="name" id="user-name" /><br>
+        
+        <label for="Name">Cual es tu edad?/How old are you?</label><br>
+        <input type="name" id="user-age" /><br>
+        
+        <label for="Name">Genero/Gender</label><br>
+        <select id="gender" name="gender">
+            <option value="male">Masculino/Male</option>
+            <option value="female">Femenino/Female</option>
+            <option value="other">Otro/Other</option>
+        </select><br>
+        
+        <label for="language">Idioma/Language</label><br>
+        <select id="language" name="language">
+            <option value="EN">English</option>
+            <option value="ES">Español</option>
+        </select><br>
+        
+        <input type="submit" value="Enviar" id="name-button" /><br>
+    </form>
+    
+    <div id="grettingsName-div"></div>
+
+    <script type="module" src="./src/presenter.js"></script>
+</body>
+</html>
